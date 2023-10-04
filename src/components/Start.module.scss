@@ -1,0 +1,22 @@
+@import "../scss/mixins";
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  //   background-size: cover;
+  background-position: right 50vw bottom;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  @include container;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
