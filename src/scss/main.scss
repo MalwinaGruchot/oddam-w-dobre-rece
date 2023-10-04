@@ -1,6 +1,9 @@
+@import "../../node_modules/reset-css/reset.css";
 @import "./fonts";
 @import "./colors";
 
 body {
   font-family: $font-base;
+  font-size: 10px;
+  position: relative;
 }
