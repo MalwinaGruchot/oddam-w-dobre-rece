@@ -2,7 +2,7 @@ import Button from "./Button";
 import styles from "./HomeHeader.module.scss";
 export default function HomeHeader() {
   return (
-    <header style={{ position: "sticky", top: 0, right: 0 }}>
+    <header className={styles.menu}>
       <nav className={styles.navigation}>
         <ul className={styles.container}>
           <li>

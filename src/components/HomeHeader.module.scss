@@ -1,5 +1,12 @@
 @import "../scss/mixins";
 
+.menu {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, transparent 20%, white 80%);
+}
+
 .navigation {
   @include container;
 }

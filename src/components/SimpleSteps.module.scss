@@ -1,0 +1,23 @@
+@import "../scss/colors";
+@import "../scss/mixins";
+
+.container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simpleSteps {
+  padding-top: 55px;
+}
+
+.wrapper {
+  background-color: $color-section-primary;
+}
+
+.wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0 80px;
+}
