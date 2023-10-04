@@ -1,0 +1,10 @@
+@import "../scss/mixins";
+
+.navigation {
+  @include container;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
