@@ -1,7 +1,7 @@
-import TextAndDecor from "./TextAndDecor";
+import TextAndDecor from "../TextAndDecor";
 import styles from "./SimpleSteps.module.scss";
-import Button from "./Button";
-import Step from "./Step";
+import Button from "../Button";
+import Step from "../Step";
 
 export default function SimpleSteps() {
   return (

@@ -1,7 +1,7 @@
-import TextAndDecor from "./TextAndDecor";
-import img from "../assets/Home-Hero-Image.jpg";
+import TextAndDecor from "../TextAndDecor";
+import img from "../../assets/Home-Hero-Image.jpg";
 import styles from "./Start.module.scss";
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Start() {
   return (

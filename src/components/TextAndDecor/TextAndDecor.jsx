@@ -1,4 +1,4 @@
-import decor from "../assets/Decoration.svg";
+import decor from "../../assets/Decoration.svg";
 import styles from "./TextAndDecor.module.scss";
 
 export default function TextAndDecor({ text1, text2 }) {
