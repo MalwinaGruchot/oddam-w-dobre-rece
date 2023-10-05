@@ -1,10 +1,12 @@
 @import "../scss/mixins";
 
 .menu {
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
-  background: linear-gradient(90deg, transparent 20%, white 80%);
+  left: 0;
+  background: linear-gradient(90deg, transparent 5%, white 40%);
+  // background-color: white;
 }
 
 .navigation {
@@ -14,4 +16,12 @@
 .container {
   display: flex;
   justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.containerBottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  margin-right: -20px;
 }

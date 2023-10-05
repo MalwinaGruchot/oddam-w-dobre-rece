@@ -9,10 +9,14 @@ export default function HomeHeader() {
             <Button text={"Zaloguj"} link={"/login"}></Button>
           </li>
           <li>
-            <Button text={"Załóż konto"} link={"/create-an-account"}></Button>
+            <Button
+              text={"Załóż konto"}
+              link={"/create-an-account"}
+              border={1}
+            ></Button>
           </li>
         </ul>
-        <ul className={styles.container}>
+        <ul className={styles.containerBottom}>
           <li>
             <Button text={"Start"} size={"medium"}></Button>
           </li>
