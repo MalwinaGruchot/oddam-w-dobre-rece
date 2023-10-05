@@ -1,4 +1,4 @@
-import Column from "./Column";
+import Column from "../Column";
 import styles from "./ThreeColumns.module.scss";
 
 export default function ThreeColumns() {
