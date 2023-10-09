@@ -1,0 +1,23 @@
+@import "../../scss/colors";
+@import "../../scss/mixins";
+
+.container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  width: 640px;
+  color: $color-text-primary;
+  font-size: 22px;
+  text-align: center;
+  padding: 70px 0;
+  line-height: 30px;
+}

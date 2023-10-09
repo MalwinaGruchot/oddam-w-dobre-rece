@@ -1,0 +1,18 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
+.button {
+  width: 208px;
+  height: 79px;
+  border: 0.75px solid $color-border;
+  color: $color-text-primary;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 80px;
+}
