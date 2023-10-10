@@ -1,0 +1,87 @@
+@import "../../scss/colors";
+@import "../../scss/mixins";
+
+.container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 200px;
+}
+
+.contact {
+  height: 1026px;
+  position: relative;
+}
+
+.img {
+  height: 1026px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: top right;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  color: $color-text-primary;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+
+.labelText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: $color-text-primary;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+
+.input {
+  font-size: 18px;
+  color: $color-text-primary;
+  border: none;
+  border-bottom: 1px solid $color-border;
+  background-color: transparent;
+  &::placeholder {
+    color: #3c3c3c26;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #707070;
+  width: 150px;
+  height: 50px;
+  align-self: flex-end;
+}
