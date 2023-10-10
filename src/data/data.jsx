@@ -26,33 +26,33 @@ const data = [
       },
       {
         id: 4,
-        name: `Fundacja "Dbam o Zdrowie"`,
+        name: `Fundacja "Dbam o Zdrowie 2"`,
         decription:
           "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         items: ["ubrania", "jedzenie", "sprzęt AGD", "meble", "zabawki"],
       },
       {
         id: 5,
-        name: `Fundacja “Dla dzieci”`,
+        name: `Fundacja “Dla dzieci 2”`,
         decription: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
         items: ["ubrania", "meble", "zabawki"],
       },
       {
         id: 6,
-        name: `Fundacja “Bez domu”`,
+        name: `Fundacja “Bez domu 2”`,
         decription:
           "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         items: ["ubrania", "jedzenie", "ciepłe koce"],
       },
       {
         id: 7,
-        name: `Fundacja “Dla dzieci”`,
+        name: `Fundacja “Dla dzieci 3”`,
         decription: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
         items: ["ubrania", "meble", "zabawki"],
       },
       {
         id: 8,
-        name: `Fundacja “Bez domu”`,
+        name: `Fundacja “Bez domu 3”`,
         decription:
           "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         items: ["ubrania", "jedzenie", "ciepłe koce"],
