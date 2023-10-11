@@ -18,19 +18,27 @@ export default function HomeHeader() {
         </ul>
         <ul className={styles.containerBottom}>
           <li>
-            <Button text={"Start"} size={"medium"}></Button>
+            <Button text={"Start"} size={"medium"} link={"start"}></Button>
           </li>
           <li>
-            <Button text={"O co chodzi?"} size={"medium"}></Button>
+            <Button
+              text={"O co chodzi?"}
+              size={"medium"}
+              link={"simpleSteps"}
+            ></Button>
           </li>
           <li>
-            <Button text={"O nas"} size={"medium"}></Button>
+            <Button text={"O nas"} size={"medium"} link={"aboutUs"}></Button>
           </li>
           <li>
-            <Button text={"Fundacja i organizacje"} size={"medium"}></Button>
+            <Button
+              text={"Fundacja i organizacje"}
+              size={"medium"}
+              link={"whowehelp"}
+            ></Button>
           </li>
           <li>
-            <Button text={"Kontakt"} size={"medium"}></Button>
+            <Button text={"Kontakt"} size={"medium"} link={"contact"}></Button>
           </li>
         </ul>
       </nav>

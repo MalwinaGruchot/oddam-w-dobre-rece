@@ -6,6 +6,7 @@ import signature from "../../assets/Signature.svg";
 export default function AboutUs() {
   return (
     <section
+      id="aboutUs"
       className={styles.aboutUs}
       style={{ backgroundImage: `url(${people})` }}
     >

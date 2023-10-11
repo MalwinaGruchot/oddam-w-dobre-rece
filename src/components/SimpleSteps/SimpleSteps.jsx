@@ -5,7 +5,7 @@ import Step from "../Step";
 
 export default function SimpleSteps() {
   return (
-    <section className={styles.simpleSteps}>
+    <section className={styles.simpleSteps} id="simpleSteps">
       <TextAndDecor text1={"Wystarczą 4 proste kroki"}></TextAndDecor>
       <div className={styles.wrapper}>
         <div className={styles.container}>

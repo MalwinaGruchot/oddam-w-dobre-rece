@@ -7,7 +7,7 @@ import instagramicon from "../../assets/Instagram.svg";
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div
         className={styles.img}
         style={{ backgroundImage: `url(${img})` }}

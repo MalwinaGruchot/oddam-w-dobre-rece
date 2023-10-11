@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Button.module.scss";
+import { scroller } from "react-scroll";
 
 export default function Button({
   text = "text",
@@ -7,6 +8,15 @@ export default function Button({
   link = "/",
   border = 0,
 }) {
+  const navigate = useNavigate();
+  const goToHomeAndScroll = async (link) => {
+    await navigate("/");
+    await scroller.scrollTo(link, {
+      duration: 1500,
+      smooth: true,
+    });
+  };
+
   if (size === "small")
     return (
       <Link
@@ -19,9 +29,13 @@ export default function Button({
     );
   if (size === "medium")
     return (
-      <Link to={link} className={styles.medium}>
+      <a
+        href={`/#${link}`}
+        className={styles.medium}
+        onClick={() => goToHomeAndScroll(link)}
+      >
         {text}
-      </Link>
+      </a>
     );
   if (size === "big")
     return (

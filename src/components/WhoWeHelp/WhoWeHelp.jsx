@@ -21,7 +21,7 @@ export default function WhoWeHelp() {
   };
 
   return (
-    <section className={styles.whoWeHelp}>
+    <section className={styles.whoWeHelp} id="whowehelp">
       <div className={styles.container}>
         <TextAndDecor text1={"Komu pomagamy"}></TextAndDecor>
         <div className={styles.wrapper}>

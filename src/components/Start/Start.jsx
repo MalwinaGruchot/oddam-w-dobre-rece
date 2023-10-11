@@ -8,6 +8,7 @@ export default function Start() {
     <section
       className={styles.wrapper}
       style={{ backgroundImage: `url(${img})` }}
+      id="start"
     >
       <div className={styles.container}>
         <div>
