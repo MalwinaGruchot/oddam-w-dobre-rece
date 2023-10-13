@@ -1,4 +1,5 @@
 import styles from "./ButtonWhoWeHelp.module.scss";
+import PropTypes from "prop-types";
 
 export default function ButtonWhoWeHelp({ children, id, curentId, setFilter }) {
   const handleClick = () => {
@@ -17,3 +18,10 @@ export default function ButtonWhoWeHelp({ children, id, curentId, setFilter }) {
     </button>
   );
 }
+
+ButtonWhoWeHelp.propTypes = {
+  children: PropTypes.string,
+  id: PropTypes.string,
+  curentId: PropTypes.string,
+  setFilter: PropTypes.func,
+};

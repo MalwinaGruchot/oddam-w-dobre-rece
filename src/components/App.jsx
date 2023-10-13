@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import RouteWrapper from "./RouteWrapper";
 import LogIn from "./LogIn";
-import CreateAnAccount from "./CreateAnAccount";
+import CreateAnAccount from "./CreateAnAccount/CreateAnAccount";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import TextAndDecor from "../TextAndDecor";
 import ButtonWhoWeHelp from "../ButtonWhoWeHelp";
 import styles from "./WhoWeHelp.module.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import data from "../../data/data";
 import WhoWeHelpItem from "../WhoWeHelpItem";
 import PageNumber from "../PageNumber";

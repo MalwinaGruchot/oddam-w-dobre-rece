@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./Button.module.scss";
 import { scroller } from "react-scroll";
+import PropTypes from "prop-types";
 
 export default function Button({
   text = "text",
@@ -44,3 +45,10 @@ export default function Button({
       </Link>
     );
 }
+
+Button.propTypes = {
+  text: PropTypes.string,
+  size: PropTypes.string,
+  link: PropTypes.string,
+  border: PropTypes.number,
+};

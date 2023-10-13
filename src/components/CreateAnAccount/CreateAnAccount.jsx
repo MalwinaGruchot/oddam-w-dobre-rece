@@ -1,6 +1,10 @@
+import styles from "./CreateAnAccount.module.scss";
+import TextAndDecor from "../TextAndDecor";
+import { Link } from "react-router-dom";
+
 export default function CreateAnAccount() {
   return (
-    <section className={styles.logIn}>
+    <section className={styles.createAccount}>
       <TextAndDecor text1={"Zaloguj się"}></TextAndDecor>
       <div className={styles.wrapper}>
         <label className={styles.label} htmlFor="email">
@@ -9,6 +13,10 @@ export default function CreateAnAccount() {
         </label>
         <label className={styles.label} htmlFor="password">
           Hasło
+          <input className={styles.input} type="password" />
+        </label>
+        <label className={styles.label} htmlFor="password">
+          Powtórz hasło
           <input className={styles.input} type="password" />
         </label>
       </div>

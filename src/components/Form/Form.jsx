@@ -1,6 +1,11 @@
 import { useState } from "react";
 import styles from "./Form.module.scss";
 import sendMessage from "../../api/sendMessage";
+import {
+  validateName,
+  validateMessage,
+  validateEmail,
+} from "../../validate/validate";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -21,32 +26,15 @@ export default function Form() {
     });
 
     let error = {
-      name: false,
-      email: false,
-      message: false,
+      name: !validateName(name),
+      email: !validateEmail(email),
+      message: !validateMessage(message),
     };
-    if (name === "" || name.includes(" ")) {
-      error = { ...error, name: true };
-    }
-
-    if (
-      !String(email)
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        )
-    ) {
-      error = { ...error, email: true };
-    }
-
-    if (message === "" || message.length < 120) {
-      error = { ...error, message: true };
-    }
-    console.log(error);
     setErr(error);
-
-    if (error.name || error.message) {
-      return false;
+    for (const key in error) {
+      if (error[key] === true) {
+        return false;
+      }
     }
     return true;
   };
@@ -54,8 +42,8 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      sendMessage({ name, email, message }, setStatus).catch((err) =>
-        console.log(err)
+      sendMessage({ name, email, message: message.trim() }, setStatus).catch(
+        (err) => console.log(err)
       );
 
       setTimeout(() => {
