@@ -29,6 +29,7 @@ export default function WhoWeHelp() {
             curentId={filter}
             id={"fundacja"}
             setFilter={setFilter}
+            setPage={setPage}
           >
             Fundacjom
           </ButtonWhoWeHelp>
@@ -36,6 +37,7 @@ export default function WhoWeHelp() {
             curentId={filter}
             id={"organizacja"}
             setFilter={setFilter}
+            setPage={setPage}
           >
             Organizacjom pozarządowym
           </ButtonWhoWeHelp>
@@ -43,6 +45,7 @@ export default function WhoWeHelp() {
             curentId={filter}
             id={"zbiorka"}
             setFilter={setFilter}
+            setPage={setPage}
           >
             Lokalnym zbiórkom
           </ButtonWhoWeHelp>

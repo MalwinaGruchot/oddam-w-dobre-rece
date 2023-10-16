@@ -1,9 +1,16 @@
 import styles from "./ButtonWhoWeHelp.module.scss";
 import PropTypes from "prop-types";
 
-export default function ButtonWhoWeHelp({ children, id, curentId, setFilter }) {
+export default function ButtonWhoWeHelp({
+  children,
+  id,
+  curentId,
+  setFilter,
+  setPage,
+}) {
   const handleClick = () => {
     setFilter(id);
+    setPage(1);
   };
 
   return (
@@ -24,4 +31,5 @@ ButtonWhoWeHelp.propTypes = {
   id: PropTypes.string,
   curentId: PropTypes.string,
   setFilter: PropTypes.func,
+  setPage: PropTypes.number,
 };
