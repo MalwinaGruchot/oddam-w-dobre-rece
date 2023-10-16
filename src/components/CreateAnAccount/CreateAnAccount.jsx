@@ -69,7 +69,7 @@ export default function CreateAnAccound() {
             className={styles.input}
             id="password2"
             name="password2"
-            type="password2"
+            type="password"
             value={pass2}
             onChange={(e) => setPass2(e.target.value)}
           />
