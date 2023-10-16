@@ -23,3 +23,10 @@ export const validateMessage = (message) => {
   }
   return true;
 };
+
+export const validatePass = (pass) => {
+  if (pass.trim().length < 6) {
+    return false;
+  }
+  return true;
+};
