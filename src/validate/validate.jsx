@@ -30,3 +30,10 @@ export const validatePass = (pass) => {
   }
   return true;
 };
+
+export const validatePass2 = (pass, pass2) => {
+  if (pass !== pass2) {
+    return false;
+  }
+  return true;
+};
